@@ -20,23 +20,18 @@ The goals / steps of this project are the following:
 
 [vis1]: ./examples/visualization.png "Visualization"
 [vis2]: ./examples/input.png "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[ts0]: ./0.jpg "Traffic Sign 0"
-[ts1]: ./1.jpg "Traffic Sign 1"
-[ts2]: ./2.jpg "Traffic Sign 2"
-[ts3]: ./3.jpg "Traffic Sign 3"
-[ts4]: ./4.jpg "Traffic Sign 4"
+
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
-
-** Note: I was using tensorflow 1.6 as I had trouble getting earlier versions to work, hence the compiler warnings **
 
 ---
 ### Writeup / README
 
 You're reading it! and here is a link to my [project code](https://github.com/PeeJay/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+
+#### Note: I was using tensorflow 1.6 as I had trouble getting earlier versions to work, hence the compiler warnings ####
+
 
 ### Data Set Summary & Exploration
 
@@ -112,8 +107,11 @@ The final results were a validation accuracy of 0.983 and test accuracy of 0.961
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][ts0] ![alt text][ts1] ![alt text][ts2] 
-![alt text][ts3] ![alt text][ts4]
+<img src="0.jpg" width="64" height="64" />
+<img src="1.jpg" width="64" height="64" />
+<img src="2.jpg" width="64" height="64" />
+<img src="3.jpg" width="64" height="64" />
+<img src="4.jpg" width="64" height="64" />
 
 The 2nd image may be difficult to classify because the photo is taken from an angle that gives the sign a distorted perspective.
 
@@ -143,7 +141,8 @@ Class 29
   - 0: 3.5%
   - 8: 0.8%
   - 1: 0.3%
-On the first image the network was able to recognise the large features of the image, but got the small details totally wrong. The Bicycles crossing and Children crossing signs are similar.
+
+  On the first image the network was able to recognise the large features of the image, but got the small details totally wrong. The Bicycles crossing and Children crossing signs are similar.
 
 Class 25
   - 11: 63.0%
@@ -151,7 +150,8 @@ Class 25
   - 28: 1.8%
   - 23: 0.1%
   - 14: 0.1%
-On the second sign the correct class is not even listed as an option, which as noted before is likely due to limited training images in that class.
+
+  On the second sign the correct class is not even listed as an option, which as noted before is likely due to limited training images in that class.
   
 Class 7
   - 7: 99.0%
@@ -172,5 +172,5 @@ Class 15
   - 38: 0.0%
   - 32: 0.0%
 
-The final 3 images are classified correctly with over 99% probability, here the network is working as it should.
+  The final 3 images are classified correctly with over 99% probability, here the network is working as it should.
 
